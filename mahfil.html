@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>জামি‘আতুল অলিজা ইসলামিয়া</title>
+<style>
+body{font-family:'Noto Sans Bengali',sans-serif;background:#f4f4f4;margin:0;padding:20px 0;color:#333}
+.header{text-align:center;padding:30px 20px;background:#006400;color:#fff;width:100%}
+.header h1{font-size:2.2em;margin:10px 0}
+.header h2{font-size:1.9em;margin:10px 0}
+.address{color:#ffd700;font-size:1.1em}
+hr{width:80%;border:1px solid #ffd700;margin:30px auto}
+
+/* মাহফিল + দুই ফ্রেম */
+.mahfil-section{
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ gap:15px;
+ width:100%;
+ margin:30px auto;
+ flex-wrap:nowrap;
+}
+
+.mahfil-box{
+ background:#006400;
+ color:#fff;
+ padding:30px 35px;
+ border-radius:20px;
+ box-shadow:0 10px 25px rgba(0,0,0,0.3);
+ text-align:center;
+ min-width:260px;
+}
+
+.mahfil-box h3{font-size:2em;margin-bottom:15px}
+.mahfil-box a{color:#ffd700;font-size:1.3em;text-decoration:none}
+
+/* স্লাইডার ফ্রেম */
+.slider-frame{
+ width:220px;
+ height:180px;
+ border-radius:12px;
+ border:3px solid #ffd700;
+ overflow:hidden;
+ background:#000;
+ box-shadow:0 6px 14px rgba(0,0,0,0.25);
+}
+
+.slider-track{
+ display:flex;
+ width:1000%;
+ animation: move 45s linear infinite;
+}
+
+.slide{
+ width:10%;
+ position:relative;
+ display:flex;
+ flex-direction:column;
+}
+
+.slide img{
+ width:100%;
+ height:130px;
+ object-fit:cover; /* পরিবর্তন: contain থেকে cover এ পরিবর্তন */
+ background:#000;
+ object-position:center; /* ছবি সেন্টারে রাখার জন্য */
+}
+
+.caption{
+ background:rgba(0,0,0,0.75);
+ color:#ffd700;
+ text-align:center;
+ padding:10px 5px;
+ font-size:0.75em; /* পরিবর্তন: 1.15em থেকে 0.75em এ ছোট করা */
+ line-height:1.2;
+}
+
+@keyframes move{
+ 0%{transform:translateX(0)}
+ 10%{transform:translateX(0)}
+ 20%{transform:translateX(-10%)}
+ 30%{transform:translateX(-20%)}
+ 40%{transform:translateX(-30%)}
+ 50%{transform:translateX(-40%)}
+ 60%{transform:translateX(-50%)}
+ 70%{transform:translateX(-60%)}
+ 80%{transform:translateX(-70%)}
+ 90%{transform:translateX(-80%)}
+ 100%{transform:translateX(-90%)}
+}
+
+@media(max-width:900px){
+ .mahfil-section{flex-wrap:wrap}
+ .slider-frame{width:90%;height:200px}
+ .slide img{height:150px}
+ .album-title{width:90%}
+}
+ .slider-frame{width:90%;height:380px}
+ .slide img{height:320px}
+}
+
+/* এলবাম শিরোনাম সেন্টার ফিক্স */
+.album-title{
+ width:220px;
+ text-align:center;
+ font-size:0.95em;
+ font-weight:600;
+ color:#006400;
+ margin-bottom:4px;
+}
+@media(max-width:900px){
+ .album-title{width:90%}
+}
+ .slider-frame{width:90%;height:380px}
+ .slide img{height:320px}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1>জামি‘আতুল অলিজা ইসলামিয়া (মাদরাসা) ও</h1>
+<h2>জামি‘আ হযরত সুমাইয়া রাযি. (মহিলা মাদরাসা)</h2>
+<p class="address">দক্ষিণ বাগবেড় (আন্দারমানিক), ১নং ওয়ার্ড, গাজীপুর সিটি কর্পোরেশন, গাজীপুর।<br>মোবাইল: 01982-622953 (বালক), 01936-117017 (বালিকা)</p>
+</div>
+
+<hr>
+
+<div class="mahfil-section">
+
+<!-- বাম ফ্রেম -->
+<div class="album-title">মাদরাসা এলবাম</div>
+<div class="slider-frame">
+ <div class="slider-track">
+  <div class="slide"><img src="madrasha/1.jpg"><div class="caption">পাখির চোখে জামি‘আদ্বয়</div></div>
+  <div class="slide"><img src="madrasha/2.jpg"><div class="caption">বালক শাখার নতুন ভবন</div></div>
+  <div class="slide"><img src="madrasha/3.jpg"><div class="caption">বালক শাখার পুরাতন ভবন</div></div>
+  <div class="slide"><img src="madrasha/4.jpg"><div class="caption">তাহফিজ বিভাগের পিছন অংশ</div></div>
+  <div class="slide"><img src="madrasha/5.jpg"><div class="caption">বালিকা শাখার ভবন</div></div>
+  <div class="slide"><img src="madrasha/6.jpg"><div class="caption">মাদরাসার প্রাচীন মসজিদ</div></div>
+  <div class="slide"><img src="madrasha/7.jpg"><div class="caption">বালিকা শাখার নির্মাণাধীন ভবন</div></div>
+  <div class="slide"><img src="madrasha/8.jpg"><div class="caption">জামি‘আর কম্পিউটার ল্যাব</div></div>
+  <div class="slide"><img src="madrasha/9.jpg"><div class="caption">বালক শাখার অফিস কক্ষ</div></div>
+  <div class="slide"><img src="madrasha/10.jpg"><div class="caption">বালিকা শাখার অফিস কক্ষ</div></div>
+  <div class="slide"><img src="madrasha/11.jpg"><div class="caption">মুহতামিম সাহেবের কারযালয়</div></div>
+  <div class="slide"><img src="madrasha/12.jpg"><div class="caption">মুহতামিম সাহেবের বিশ্রামাগার</div></div>
+  <div class="slide"><img src="madrasha/13.jpg"><div class="caption">মেহমানখানা</div></div>
+  <div class="slide"><img src="madrasha/14.jpg"><div class="caption">দারুল মুতালাআ</div></div>
+  <div class="slide"><img src="madrasha/15.jpg"><div class="caption">হিফজ বিভাগের একাংশ</div></div>
+  <div class="slide"><img src="madrasha/16.jpg"><div class="caption">পরীক্ষা হলের একাংশ</div></div>
+  <div class="slide"><img src="madrasha/17.jpg"><div class="caption">মক্তব বিভাগের একাংশ</div></div>
+  <div class="slide"><img src="madrasha/18.jpg"><div class="caption">বালিকা শাখার দাওরা হাদীসের একাংশ</div></div>
+  <div class="slide"><img src="madrasha/19.jpg"><div class="caption">শিশু শ্রেণী একাংশ</div></div>
+
+ </div>
+</div>
+
+<!-- মাঝখানে মাহফিল -->
+<div class="mahfil-box">
+ <h3>মাদরাসার বার্ষিক মাহফিল</h3>
+ <a href="mahfilel_kaj.html">বিস্তারিত দেখুন</a>
+</div>
+
+<!-- ডান ফ্রেম -->
+<div class="album-title">মাহফিল এলবাম</div>
+<div class="slider-frame">
+ <div class="slider-track">
+  <div class="slide"><img src="mahfil/1.jpg"><div class="caption">আল্লামা শাহ ছালাহ উদ্দীন নানুপুরী দা. বা.</div></div>
+  <div class="slide"><img src="mahfil/2.jpg"><div class="caption">আল্লামা নূরুল ইসলাম ওলীপুরী দা. বা.</div></div>
+  <div class="slide"><img src="mahfil/3.jpg"><div class="caption">.আল্লামা ইয়াহইয়া মাহমুদ দা. বা.</div></div>
+  <div class="slide"><img src="mahfil/4.jpg"><div class="caption">শায়খুল হাদীস আল্লামা মামুনুল হক দা. বা.</div></div>
+  <div class="slide"><img src="mahfil/5.jpg"><div class="caption">আল্লামা খালেদ সাইফুল্লাহ সাদী দা. বা.</div></div>
+  <div class="slide"><img src="mahfil/6.jpg"><div class="caption">আল্লামা নজরুল ইসলাম কাসেমী দা. বা.</div></div>
+  <div class="slide"><img src="mahfil/7.jpg"><div class="caption">আল্লামা খালেদ সাইফুল্লাহ আইয়ুবী দা. বা.</div></div>
+  <div class="slide"><img src="mahfil/8.jpg"><div class="caption">আল্লামা খুরশিদ আলম কাসেমী দা.বা..jpg</div></div>
+  <div class="slide"><img src="mahfil/9.jpg"><div class="caption">শায়খুল হাদীস আল্লামা ফরিদুদ্দীন আল মোবারক দা. বা.</div></div>
+  <div class="slide"><img src="mahfil/10.jpg"><div class="caption">শাইখুল হাদীস মাওলানা হামিদ জাহেরী দা.বা. </div></div>
+  <div class="slide"><img src="mahfil/11.jpg"><div class="caption">শাইখুল হাদীস মুফতী মাসউদুল কারীম দা. বা.</div></div>
+  <div class="slide"><img src="mahfil/12.jpg"><div class="caption">মাওলানা আব্দুল লতিফ খান সিরাজী দা. বা.</div></div>
+  <div class="slide"><img src="mahfil/13.jpg"><div class="caption">মাওলানা আব্দুল বাসেত খান সিরাজী দা. বা. </div></div>
+  <div class="slide"><img src="mahfil/14.jpg"><div class="caption">শায়খুল হাদীস কুতবুদ্দীন নানুপুরী দা. বা.</div></div>
+  <div class="slide"><img src="mahfil/15.jpg"><div class="caption">শায়খুল হাদীস মাও.আবু মুসা কাসেমী দা. বা.</div></div>
+  <div class="slide"><img src="mahfil/16.jpg"><div class="caption">মুফতী মুর্তজা হাসান ফয়েজী মাসুম দা. বা.</div></div>
+  <div class="slide"><img src="mahfil/17.jpg"><div class="caption">শাইখুল হাদীস মুফতী নূরুল ইসলাম দা. বা.</div></div>
+  <div class="slide"><img src="mahfil/18.jpg"><div class="caption">মাওলানা হাবিবুল্লাহ আরমানী (পাকিস্তান) দা.বা.</div></div>
+  <div class="slide"><img src="mahfil/19.jpg"><div class="caption">মাও. মুফতি ফয়জুল্লাহ নোমানী দা. বা.</div></div>
+  <div class="slide"><img src="mahfil/20.jpg"><div class="caption">মাওলানা মুফতী রিদওয়ান রফিকী দা. বা.</div></div>
+  <div class="slide"><img src="mahfil/21.jpg"><div class="caption">হযরত মাও. রাফী বিন মুনির দা. বা.</div></div>
+  <div class="slide"><img src="mahfil/22.jpg"><div class="caption">হেন্টবিল</div></div>
+ </div>
+</div>
+
+</div>
+
+</body>
+</html>
